@@ -1,0 +1,14 @@
+@import './Global/global.scss';
+@import './Global/typography.scss';
+@import './Global/header.scss';
+
+// Sections
+@import './Sections/Catalog.scss';
+@import './Sections/AjaxCart.scss';
+@import './Sections/AjaxCartRecommended.scss';
+@import './Sections/FilterLists.scss';
+
+// Snippets
+@import './Snippets/CatalogItem.scss';
+@import './Snippets/ModalOverlay.scss';
+@import './Snippets/AjaxItem.scss';

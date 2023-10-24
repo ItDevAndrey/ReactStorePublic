@@ -1,0 +1,73 @@
+.filter-lists {
+  position: relative;
+  z-index: 98;
+  margin-bottom: 30px;
+}
+
+.filter-lists-text {
+  text-align: center;
+  margin-bottom: 20px;
+  letter-spacing: 0.5px;
+}
+
+.filter-lists-wrapper {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: #fff;
+  max-height: 400px;
+  padding: 30px 0;
+  overflow: auto;
+
+  &-inner {
+    max-width: 300px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px 10px;
+  }
+
+  .fitler-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.5px;
+    height: 30px;
+    color: rgba($color: #000, $alpha: 0.6);
+    border: 1px solid #ccc;
+    transition: .3s all;
+
+    &.is-active {
+      color: #000;
+      border-color: #000;
+    }
+  }
+
+  .filters-active-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 15px;
+    margin: 20px auto;
+    width: fit-content;
+
+    .filters-active-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: fit-content;
+      height: 30px;
+      padding: 0 20px;
+      background: #f0f0f0;
+      border-radius: 20px;
+
+
+      img {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+}
+

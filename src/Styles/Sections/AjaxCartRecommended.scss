@@ -1,0 +1,28 @@
+.recommended-products {
+  font-size: 25px;
+  font-weight: 600;
+
+  &-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    height: 78vh;
+    overflow: auto;
+  }
+}
+
+.recommended-product {
+  &-item {
+    position: relative;
+  }
+
+  &-image {
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &-title {
+    margin: 10px 0;
+  }
+}
